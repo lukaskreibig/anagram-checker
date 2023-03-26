@@ -20,7 +20,7 @@ export const AnagramChecker: React.FC = () => {
     if (word1 !== '' && word2 !== '') {
       setResult(areAnagrams(word1, word2) ? 'Anagramme gefunden!' : 'Keine Übereinstimmung.');
     } else {
-      setResult('Kein Wort eingegeben');
+      setResult('Beide Felder müssen ausgefüllt werden.');
     }
   };
 
