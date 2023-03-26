@@ -1,9 +1,9 @@
-import React from 'react';
+// src/App.test.tsx
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Anagram Checker header', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const headerElement = screen.getByText(/Anagram Checker/i);
+  expect(headerElement).toBeInTheDocument();
 });

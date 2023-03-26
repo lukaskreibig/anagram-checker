@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, CssBaseline, Box, Typography } from '@mui/material';
+import { AnagramChecker } from './components/AnagramChecker/AnagramChecker';
+import { SnackbarProvider, enqueueSnackbar } from 'notistack';
 
-function App() {
+/**
+ * Main application component.
+ * @returns {React.ReactElement} The rendered application component.
+ */
+const App: React.FC = (): React.ReactElement => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <CssBaseline />
+      <SnackbarProvider>
+        <Box
+          minHeight="100vh"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          bgcolor="background.default"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Container maxWidth="sm">
+            <Typography variant="h3" component="h1" textAlign="center" gutterBottom>
+              Anagramm Checker
+            </Typography>
+            <AnagramChecker />
+          </Container>
+        </Box>
+      </SnackbarProvider>
+    </>
   );
-}
+};
 
 export default App;
