@@ -12,7 +12,7 @@ This project is a simple Anagram Checker (in german language) built with React a
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/anagram-checker.git
+git clone https://github.com/lukaskreibig/anagram-checker.git
 cd anagram-checker
 ```
 
