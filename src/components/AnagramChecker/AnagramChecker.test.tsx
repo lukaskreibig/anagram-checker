@@ -1,4 +1,3 @@
-// src/components/AnagramChecker/AnagramChecker.test.tsx
 import { render, fireEvent, screen } from '@testing-library/react';
 import { AnagramChecker } from './AnagramChecker';
 

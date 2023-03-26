@@ -17,7 +17,11 @@ export const AnagramChecker: React.FC = () => {
    */
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    setResult(areAnagrams(word1, word2) ? 'Anagramme gefunden!' : 'Keine Übereinstimmung.');
+    if (word1 !== '' && word2 !== '') {
+      setResult(areAnagrams(word1, word2) ? 'Anagramme gefunden!' : 'Keine Übereinstimmung.');
+    } else {
+      setResult('Kein Wort eingegeben');
+    }
   };
 
   return (
