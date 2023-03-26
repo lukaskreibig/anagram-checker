@@ -1,6 +1,6 @@
 # Anagram Checker
 
-This project is a simple Anagram Checker (in german language) built with React and TypeScript. It uses Material-UI for design and user interface. Enter two words and the app will display whether they are anagrams or not.
+This project is a simple Anagram Checker (in german language) built with React, TypeScript and React Testing Library. It uses Material-UI for design and user interface. Enter two words and the app will display whether they are anagrams or not.
 
 ## Prerequisites
 
